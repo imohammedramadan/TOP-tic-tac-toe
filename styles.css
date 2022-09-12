@@ -46,7 +46,7 @@ img {
 }
 /* ====================== */
 header {
-  background-color: #1f1f1f;
+  background-color: #162230;
   text-align: center;
   padding: 10px 40px;
 }
@@ -54,3 +54,65 @@ header h1 {
   color: rgb(226, 226, 226);
 }
 /* ====================== */
+body {
+  background-color: #1f1f1f;
+}
+
+.board-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 50px;
+}
+
+.board {
+  display: flex;
+  flex-direction: column;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.board li {
+  color: white;
+  height: 150px;
+  width: 150px;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 90px;
+}
+
+.reset-btn {
+  background-color: #063770;
+  color: white;
+  font-size: 30px;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+.reset-btn:hover {
+  transform: scale(1.2);
+}
+
+.win-msg p {
+  color: white;
+  font-size: 60px;
+}
+
+.msg-container {
+  display: flex;
+  padding-top: 20px;
+}
+
+.win-msg {
+  margin: 0 auto;
+  display: none;
+}
